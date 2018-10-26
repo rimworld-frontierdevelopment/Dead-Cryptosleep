@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <JobDef>
+        <defName>HaulCorpseToCryptosleepCasket</defName>
+        <driverClass>FrontierDevelopments.DeadCryptosleep.Jobs.JobDriver_HaulCorpseToCryptosleepCasket</driverClass>
+        <reportString>Hauling TargetA to Cryptosleep casket.</reportString>
+        <playerInterruptible>true</playerInterruptible>
+        <casualInterruptible>false</casualInterruptible>
+        <alwaysShowWeapon>false</alwaysShowWeapon>
+        <suspendable>true</suspendable>
+    </JobDef>
+</Defs>

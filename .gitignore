@@ -1,0 +1,11 @@
+*.suo
+*.exe
+
+**/bin
+**/obj
+
+.idea/
+.vs/
+
+Assemblies/
+!Assemblies/0Harmony.dll
