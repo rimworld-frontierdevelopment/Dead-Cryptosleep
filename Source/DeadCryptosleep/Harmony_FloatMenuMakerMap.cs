@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System.Linq;
 using Harmony;
 using JetBrains.Annotations;
 using RimWorld;
@@ -19,20 +18,19 @@ namespace FrontierDevelopments.DeadCryptosleep
             canTargetBuildings = false,
             mapObjectTargetsMustBeAutoAttackable = false,
             validator = targetInfo =>
-                targetInfo.HasThing && typeof(Corpse).IsAssignableFrom(targetInfo.Thing.GetType())
+                targetInfo.HasThing && targetInfo.Thing is Corpse
         };
 
         [CanBeNull]
         private static Building_CryptosleepCasket ClosestValidTarget(Map map, IntVec3 position)
         {
-            var pods = map.listerBuildings.allBuildingsColonist
-                .Where(b => typeof(Building_CryptosleepCasket).IsAssignableFrom(b.GetType()))
-                .Select(b => (Building_CryptosleepCasket)b)
-                .Where(b => !b.HasAnyContents)
-                .ToList();
-            if (pods.NullOrEmpty()) return null;
-            pods.Sort((a, b) => a.Position.DistanceTo(position).CompareTo(b.Position.DistanceTo(position)));
-            return pods.First();
+            return (Building_CryptosleepCasket)GenClosest.ClosestThingReachable(
+                position,
+                map,
+                ThingRequest.ForGroup(ThingRequestGroup.BuildingArtificial),
+                PathEndMode.ClosestTouch,
+                TraverseParms.For(TraverseMode.PassDoors),
+                validator: thing => thing is Building_CryptosleepCasket);
         }
 
         private static Job CreateHaulJob(Corpse corpse, Building_CryptosleepCasket pod)
