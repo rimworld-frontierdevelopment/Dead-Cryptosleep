@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{d9250cc7-4c4a-4e3d-aabb-38e19222a40f}") = "FrontierDevelopments-Dead-Cryptosleep", "Source\FrontierDevelopments-Dead-Cryptosleep.csproj", "{505d50cf-8446-4801-8dce-9bd58dc6b6e4}"
+Project("{d9250cc7-4c4a-4e3d-aabb-38e19222a40f}") = "Dead-Cryptosleep", "Source\Dead-Cryptosleep.csproj", "{505d50cf-8446-4801-8dce-9bd58dc6b6e4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

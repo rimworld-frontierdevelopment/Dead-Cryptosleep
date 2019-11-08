@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using System.Linq;
-using FrontierDevelopments.DeadCryptosleep.DefOfs;
 using Harmony;
 using JetBrains.Annotations;
 using RimWorld;
@@ -8,7 +7,7 @@ using UnityEngine;
 using Verse;
 using Verse.AI;
 
-namespace FrontierDevelopments.DeadCryptosleep.Harmony
+namespace FrontierDevelopments.DeadCryptosleep
 {
     [HarmonyPatch(typeof(FloatMenuMakerMap), nameof(FloatMenuMakerMap.ChoicesAtFor))]
     public class Harmony_FloatMenuMakerMap
@@ -38,7 +37,7 @@ namespace FrontierDevelopments.DeadCryptosleep.Harmony
 
         private static Job CreateHaulJob(Corpse corpse, Building_CryptosleepCasket pod)
         {
-            return new Job(LocalJobDefOf.HaulCorpseToCryptosleepCasket, corpse, pod)
+            return new Job(DeadCryptosleepDefOf.HaulCorpseToCryptosleepCasket, corpse, pod)
             {
                 count = 1
             };

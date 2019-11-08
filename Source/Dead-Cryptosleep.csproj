@@ -52,9 +52,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DeadCryptosleep\DefOfs\LocalJobDefOf.cs" />
-    <Compile Include="DeadCryptosleep\Harmony\Harmony_FloatMenuMakerMap.cs" />
-    <Compile Include="DeadCryptosleep\Jobs\JobDriver_HaulCorpseToCryptosleepCasket.cs" />
+    <Compile Include="DeadCryptosleep\Harmony_FloatMenuMakerMap.cs" />
+    <Compile Include="DeadCryptosleep\JobDriver_HaulCorpseToCryptosleepCasket.cs" />
+    <Compile Include="DeadCryptosleep\DeadCryptosleepDefOf.cs" />
     <Compile Include="DeadCryptosleep\Mod.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,10 +1,10 @@
 using RimWorld;
 using Verse;
 
-namespace FrontierDevelopments.DeadCryptosleep.DefOfs
+namespace FrontierDevelopments.DeadCryptosleep
 {
     [DefOf]
-    public class LocalJobDefOf
+    public class DeadCryptosleepDefOf
     {
         public static JobDef HaulCorpseToCryptosleepCasket;
     }
