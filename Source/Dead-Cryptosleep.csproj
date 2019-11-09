@@ -52,10 +52,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DeadCryptosleep\Harmony_FloatMenuMakerMap.cs" />
+    <Compile Include="DeadCryptosleep\Designator_HaulCryptosleep.cs" />
     <Compile Include="DeadCryptosleep\JobDriver_HaulCorpseToCryptosleepCasket.cs" />
     <Compile Include="DeadCryptosleep\DeadCryptosleepDefOf.cs" />
     <Compile Include="DeadCryptosleep\Mod.cs" />
+    <Compile Include="DeadCryptosleep\WorkGiver_HaulCryptosleep.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

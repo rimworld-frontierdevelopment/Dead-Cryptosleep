@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <JobDef>
+        <defName>HaulCorpseToCryptosleepCasket</defName>
+        <driverClass>FrontierDevelopments.DeadCryptosleep.Jobs.JobDriver_HaulCorpseToCryptosleepCasket</driverClass>
+        <reportString>Hauling TargetA to Cryptosleep casket.</reportString>
+        <playerInterruptible>true</playerInterruptible>
+        <casualInterruptible>false</casualInterruptible>
+        <alwaysShowWeapon>false</alwaysShowWeapon>
+        <suspendable>true</suspendable>
+    </JobDef>
+
+    <DesignationDef>
+        <defName>Deadcryptosleep_Haul</defName>
+        <texturePath>Designations/Haul</texturePath>
+        <targetType>Thing</targetType>
+    </DesignationDef>
+
+    <WorkGiverDef>
+        <defName>DeadCryptosleep_Haul</defName>
+        <label>haul corpse to cryptosleep casket</label>
+        <giverClass>FrontierDevelopments.DeadCryptosleep.WorkGiver_HaulCryptosleep</giverClass>
+        <priorityInType>100</priorityInType>
+        <workType>Hauling</workType>
+        <emergency>false</emergency>
+        <verb>haul</verb>
+        <gerund>hauling</gerund>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+    </WorkGiverDef>
+</Defs>

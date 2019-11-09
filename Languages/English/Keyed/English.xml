@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    <FrontierDevelopments.DeadCryptosleep.Designator.Label>Haul corpse to cryptosleep</FrontierDevelopments.DeadCryptosleep.Designator.Label>
+    <FrontierDevelopments.DeadCryptosleep.Designator.Label>Haul corpse to a cryptosleep casket</FrontierDevelopments.DeadCryptosleep.Designator.Label>
+    
+    <FrontierDevelopments.DeadCryptosleep.Designator.MustBeCorpse>Must designate a corpse</FrontierDevelopments.DeadCryptosleep.Designator.MustBeCorpse>
+    <FrontierDevelopments.DeadCryptosleep.Designator.NoCorpses>No corpses to haul to cryptosleep</FrontierDevelopments.DeadCryptosleep.Designator.NoCorpses>
+    
+</LanguageData>

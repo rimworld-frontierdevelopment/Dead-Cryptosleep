@@ -7,5 +7,7 @@ namespace FrontierDevelopments.DeadCryptosleep
     public class DeadCryptosleepDefOf
     {
         public static JobDef HaulCorpseToCryptosleepCasket;
+        public static DesignationDef Deadcryptosleep_Haul;
+        public static ThingDef CryptosleepCasket;
     }
 }
